@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  java-springboot-app:
+    container_name: java-springboot-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "9800:9800"
